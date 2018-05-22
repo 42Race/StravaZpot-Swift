@@ -11,8 +11,8 @@ import Foundation
 public struct PrimaryPhoto {
     public let id : Int?
     public let uniqueID : String?
-    public let source : PhotoSource
-    public let urls : [String : String]
+    public let source : PhotoSource?
+    public let urls : [String : String]?
 }
 
 extension PrimaryPhoto : Equatable {}

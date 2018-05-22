@@ -9,9 +9,9 @@
 import Foundation
 
 public struct Segment {
-    public let id : Int
-    public let resourceState : ResourceState
-    public let name : String
+    public let id : Int?
+    public let resourceState : ResourceState?
+    public let name : String?
     public let activityType : ActivityType?
     public let distance : Distance?
     public let averageGrade : Percentage?

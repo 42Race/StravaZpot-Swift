@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class MembershipParser : Parser {
-    public func from(json: JSON) -> Membership {
-        return Membership(rawValue: json.string!)!
+    public func from(json: JSON) -> Membership? {
+        return Membership(rawValue: json.string ?? "")
     }
 }

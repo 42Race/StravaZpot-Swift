@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class PhotoSourceParser : Parser {
-    public func from(json: JSON) -> PhotoSource {
-        return PhotoSource(rawValue: json.int!)!
+    public func from(json: JSON) -> PhotoSource? {
+        return PhotoSource(rawValue: json.int ?? 0)
     }
 }

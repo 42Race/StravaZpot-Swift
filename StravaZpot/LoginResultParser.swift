@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class LoginResultParser : Parser {
     public func from(json: JSON) -> LoginResult {
-        return LoginResult(token: json["access_token"].token!,
-                           athlete: json["athlete"].athlete!)
+        return LoginResult(token: json["access_token"].token,
+                           athlete: json["athlete"].athlete)
     }
 }

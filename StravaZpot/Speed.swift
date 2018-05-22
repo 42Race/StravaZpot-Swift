@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Speed {
-    public let metersPerSecond : Double
+    public let metersPerSecond : Double?
 }
 
 extension Speed : Equatable {}

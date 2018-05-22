@@ -9,8 +9,8 @@
 import Foundation
 
 public struct PhotoSummary {
-    public let count : Int
-    public let primary : PrimaryPhoto
+    public let count : Int?
+    public let primary : PrimaryPhoto?
 }
 
 extension PhotoSummary : Equatable {}

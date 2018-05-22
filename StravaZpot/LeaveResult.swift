@@ -9,8 +9,8 @@
 import Foundation
 
 public struct LeaveResult {
-    public let success : Bool
-    public let active : Bool
+    public let success : Bool?
+    public let active : Bool?
 }
 
 extension LeaveResult : Equatable {}

@@ -9,11 +9,11 @@
 import Foundation
 
 public struct Stream {
-    public let type : StreamType
-    public let data : [Any]
-    public let seriesType : SeriesType
-    public let originalSize : Int
-    public let resolution : Resolution
+    public let type : StreamType?
+    public let data : [Any]?
+    public let seriesType : SeriesType?
+    public let originalSize : Int?
+    public let resolution : Resolution?
 }
 
 extension Stream : Equatable {}

@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class PhotoSummaryParser : Parser {
     public func from(json: JSON) -> PhotoSummary {
-        return PhotoSummary(count : json["count"].int!,
-                            primary : json["primary"].primaryPhoto!)
+        return PhotoSummary(count : json["count"].int,
+                            primary : json["primary"].primaryPhoto)
     }
 }

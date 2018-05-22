@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Time {
-    public let seconds : Int
+    public let seconds : Int?
 }
 
 extension Time : Equatable {}

@@ -11,8 +11,8 @@ import SwiftyJSON
 
 public class TimedDoubleIntervalParser : Parser {
     public func from(json: JSON) -> TimedInterval<Double> {
-        return TimedInterval<Double>(min: json["min"].double!,
-                                     max: json["max"].double!,
-                                     time: json["time"].int!)
+        return TimedInterval<Double>(min: json["min"].double ?? 0.0,
+                                     max: json["max"].double ?? 0.0,
+                                     time: json["time"].int ?? 0)
     }
 }

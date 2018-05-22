@@ -9,11 +9,11 @@
 import Foundation
 
 public struct Split {
-    public let distance : Distance
-    public let elevationDifference : Distance
-    public let elapsedTime : Time
-    public let movingTime : Time
-    public let split : Int
+    public let distance : Distance?
+    public let elevationDifference : Distance?
+    public let elapsedTime : Time?
+    public let movingTime : Time?
+    public let split : Int?
 }
 
 extension Split : Equatable {}

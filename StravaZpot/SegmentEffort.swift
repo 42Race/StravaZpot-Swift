@@ -9,16 +9,16 @@
 import Foundation
 
 public struct SegmentEffort {
-    public let id : Int64
-    public let resourceState : ResourceState
-    public let name : String
-    public let activity : Activity
-    public let athlete : Athlete
-    public let elapsedTime : Time
-    public let movingTime : Time
-    public let startDate : Date
-    public let startDateLocal : Date
-    public let distance : Distance
+    public let id : Int64?
+    public let resourceState : ResourceState?
+    public let name : String?
+    public let activity : Activity?
+    public let athlete : Athlete?
+    public let elapsedTime : Time?
+    public let movingTime : Time?
+    public let startDate : Date?
+    public let startDateLocal : Date?
+    public let distance : Distance?
     public let startIndex : Int?
     public let endIndex : Int?
     public let averageCadence : Double?

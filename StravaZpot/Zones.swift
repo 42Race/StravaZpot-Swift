@@ -9,8 +9,8 @@
 import Foundation
 
 public struct Zones {
-    public let heartRate : HeartRate
-    public let power : Power
+    public let heartRate : HeartRate?
+    public let power : Power?
 }
 
 extension Zones : Equatable {}

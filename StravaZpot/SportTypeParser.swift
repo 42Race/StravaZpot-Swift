@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class SportTypeParser : Parser {
-    public func from(json: JSON) -> SportType {
-        return SportType(rawValue: json.string!)!
+    public func from(json: JSON) -> SportType? {
+        return SportType(rawValue: json.string ?? "running")
     }
 }

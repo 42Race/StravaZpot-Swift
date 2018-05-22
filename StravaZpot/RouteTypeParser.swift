@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class RouteTypeParser : Parser {
-    public func from(json: JSON) -> RouteType {
-        return RouteType(rawValue: json.int!)!
+    public func from(json: JSON) -> RouteType? {
+        return RouteType(rawValue: json.int ?? 1)
     }
 }

@@ -9,17 +9,17 @@
 import Foundation
 
 public struct Stats {
-    public let biggestRideDistance : Distance
-    public let biggestClimbElevationGain : Distance
-    public let recentRideTotals : Totals
-    public let recentRunTotals : Totals
-    public let recentSwimTotals : Totals
-    public let yearToDateRideTotals : Totals
-    public let yearToDateRunTotals : Totals
-    public let yearToDateSwimTotals : Totals
-    public let allRideTotals : Totals
-    public let allRunTotals : Totals
-    public let allSwimTotals : Totals
+    public let biggestRideDistance : Distance?
+    public let biggestClimbElevationGain : Distance?
+    public let recentRideTotals : Totals?
+    public let recentRunTotals : Totals?
+    public let recentSwimTotals : Totals?
+    public let yearToDateRideTotals : Totals?
+    public let yearToDateRunTotals : Totals?
+    public let yearToDateSwimTotals : Totals?
+    public let allRideTotals : Totals?
+    public let allRunTotals : Totals?
+    public let allSwimTotals : Totals?
 }
 
 extension Stats : Equatable {}

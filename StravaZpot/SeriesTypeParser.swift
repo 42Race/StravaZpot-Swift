@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class SeriesTypeParser : Parser {
-    public func from(json: JSON) -> SeriesType {
-        return SeriesType(rawValue: json.string!)!
+    public func from(json: JSON) -> SeriesType? {
+        return SeriesType(rawValue: json.string ?? "time")
     }
 }

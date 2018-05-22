@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Percentage {
-    public let percent : Double
+    public let percent : Double?
 }
 
 extension Percentage : Equatable {}

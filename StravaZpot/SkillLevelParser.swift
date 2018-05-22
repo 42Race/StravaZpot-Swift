@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class SkillLevelParser : Parser {
-    public func from(json: JSON) -> SkillLevel {
-        return SkillLevel(rawValue: json.int!)!
+    public func from(json: JSON) -> SkillLevel? {
+        return SkillLevel(rawValue: json.int ?? 1)
     }
 }

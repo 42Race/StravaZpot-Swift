@@ -9,11 +9,11 @@
 import Foundation
 
 public struct Totals {
-    public let count : Int
-    public let distance : Distance
-    public let movingTime : Time
-    public let elapsedTime : Time
-    public let elevationGain : Distance
+    public let count : Int?
+    public let distance : Distance?
+    public let movingTime : Time?
+    public let elapsedTime : Time?
+    public let elevationGain : Distance?
     public let achievementCount : Int?
 }
 

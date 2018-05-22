@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class ResourceStateParser : Parser {
-    public func from(json: JSON) -> ResourceState {
-        return ResourceState(rawValue: json.int!)!
+    public func from(json: JSON) -> ResourceState? {
+        return ResourceState(rawValue: json.int ?? 1)
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Power {
-    public let zones : EquatableArray<Interval<Double>>
+    public let zones : EquatableArray<Interval<Double>>?
 }
 
 extension Power : Equatable {}

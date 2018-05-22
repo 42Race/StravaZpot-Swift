@@ -11,11 +11,11 @@ import SwiftyJSON
 
 public class TotalsParser : Parser {
     public func from(json: JSON) -> Totals {
-        return Totals(count: json["count"].int!,
-                      distance: json["distance"].distance!,
-                      movingTime: json["moving_time"].time!,
-                      elapsedTime: json["elapsed_time"].time!,
-                      elevationGain: json["elevation_gain"].distance!,
+        return Totals(count: json["count"].int,
+                      distance: json["distance"].distance,
+                      movingTime: json["moving_time"].time,
+                      elapsedTime: json["elapsed_time"].time,
+                      elevationGain: json["elevation_gain"].distance,
                       achievementCount: json["achievement_count"].int)
     }
 }

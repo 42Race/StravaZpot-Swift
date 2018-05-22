@@ -11,9 +11,9 @@ import SwiftyJSON
 
 public class SegmentParser : Parser {
     public func from(json : JSON) -> Segment {
-        return Segment(id: json["id"].int!,
-                       resourceState: json["resource_state"].resourceState!,
-                       name: json["name"].string!,
+        return Segment(id: json["id"].int,
+                       resourceState: json["resource_state"].resourceState,
+                       name: json["name"].string,
                        activityType: json["activity_type"].activityType,
                        distance: json["distance"].distance,
                        averageGrade: json["average_grade"].percentage,

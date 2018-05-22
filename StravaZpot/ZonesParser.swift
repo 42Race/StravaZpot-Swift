@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class ZonesParser : Parser {
     public func from(json: JSON) -> Zones {
-        return Zones(heartRate: json["heart_rate"].heartRate!,
-                     power: json["power"].power!)
+        return Zones(heartRate: json["heart_rate"].heartRate,
+                     power: json["power"].power)
     }
 }

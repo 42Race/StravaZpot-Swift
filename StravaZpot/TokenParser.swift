@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class TokenParser : Parser {
     public func from(json: JSON) -> Token {
-        return Token(value: json.string!)
+        return Token(value: json.string ?? "")
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Temperature {
-    public let celsiusDegrees : Double
+    public let celsiusDegrees : Double?
 }
 
 extension Temperature : Equatable {}

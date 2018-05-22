@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class RouteSubtypeParser : Parser {
-    public func from(json: JSON) -> RouteSubtype {
-        return RouteSubtype(rawValue: json.int!)!
+    public func from(json: JSON) -> RouteSubtype? {
+        return RouteSubtype(rawValue: json.int ?? 1)
     }
 }
