@@ -9,8 +9,8 @@
 import Foundation
 
 public struct LeaderboardEntry {
-    public let athleteID : Int
-    public let athleteName : String
+    public let athleteID : Int?
+    public let athleteName : String?
     public let athleteGender : Gender?
     public let averageHeartRate : Double?
     public let averageWatts : Double?

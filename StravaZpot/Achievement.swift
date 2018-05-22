@@ -9,9 +9,9 @@
 import Foundation
 
 public struct Achievement {
-    public let typeID : AchievementType
-    public let type : String
-    public let rank : Int
+    public let typeID : AchievementType?
+    public let type : String?
+    public let rank : Int?
 }
 
 extension Achievement : Equatable {}

@@ -11,11 +11,11 @@ import SwiftyJSON
 
 public class AnnouncementParser : Parser {
     public func from(json: JSON) -> Announcement {
-        return Announcement(id: json["id"].int!,
-                            resourceState: json["resource_state"].resourceState!,
-                            clubID: json["club_id"].int!,
-                            athlete: json["athlete"].athlete!,
-                            createdAt: json["created_at"].date!,
-                            message: json["message"].string!)
+        return Announcement(id: json["id"].int,
+                            resourceState: json["resource_state"].resourceState,
+                            clubID: json["club_id"].int,
+                            athlete: json["athlete"].athlete,
+                            createdAt: json["created_at"].date,
+                            message: json["message"].string)
     }
 }

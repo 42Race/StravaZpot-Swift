@@ -11,8 +11,8 @@ import SwiftyJSON
 
 public class AchievementParser : Parser {
     public func from(json: JSON) -> Achievement {
-        return Achievement(typeID: json["type_id"].achievementType!,
-                           type: json["type"].string!,
-                           rank: json["rank"].int!)
+        return Achievement(typeID: json["type_id"].achievementType,
+                           type: json["type"].string,
+                           rank: json["rank"].int)
     }
 }

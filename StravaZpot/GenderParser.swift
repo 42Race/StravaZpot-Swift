@@ -14,7 +14,7 @@ public class GenderParser : Parser {
     public func from(json : JSON) -> Gender {
         if let gender = json.string {
             if !gender.isEmpty {
-                return Gender(rawValue: json.string!)!
+                return Gender(rawValue: json.string ?? "") ?? .notDefined
             }
         }
         return Gender.notDefined

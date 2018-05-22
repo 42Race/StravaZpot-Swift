@@ -9,12 +9,12 @@
 import Foundation
 
 public struct Announcement {
-    public let id : Int
-    public let resourceState : ResourceState
-    public let clubID : Int
-    public let athlete : Athlete
-    public let createdAt : Date
-    public let message : String
+    public let id : Int?
+    public let resourceState : ResourceState?
+    public let clubID : Int?
+    public let athlete : Athlete?
+    public let createdAt : Date?
+    public let message : String?
 }
 
 extension Announcement : Equatable {}

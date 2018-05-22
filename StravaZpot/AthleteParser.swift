@@ -11,8 +11,8 @@ import SwiftyJSON
 
 public class AthleteParser : Parser {
     public func from(json: JSON) -> Athlete {
-        return Athlete(id: json["id"].int!,
-                       resourceState: json["resource_state"].resourceState!,
+        return Athlete(id: json["id"].int ?? 0,
+                       resourceState: json["resource_state"].resourceState ?? .summary,
                        firstName: json["firstname"].string,
                        lastName: json["lastname"].string,
                        profileMedium: json["profile_medium"].string,

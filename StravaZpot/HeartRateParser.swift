@@ -11,8 +11,8 @@ import SwiftyJSON
 
 public class HeartRateParser : Parser {
     public func from(json: JSON) -> HeartRate {
-        return HeartRate(customZones: json["custom_zones"].bool!,
-                         zones: json["zones"].intervalArray!)
+        return HeartRate(customZones: json["custom_zones"].bool,
+                         zones: json["zones"].intervalArray)
     }
     
 }

@@ -9,21 +9,21 @@
 import Foundation
 
 public struct Event {
-    public let id : Int
-    public let resourceState : ResourceState
-    public let title : String
-    public let description : String
-    public let clubID : Int
-    public let organizingAthlete : Athlete
-    public let activityType : ActivityType
-    public let createdAt : Date
-    public let routeID : Int
-    public let isWomanOnly : Bool
-    public let isPrivate : Bool
-    public let skillLevel : SkillLevel
-    public let terrain : Terrain
-    public let upcomingOccurrences : EquatableArray<Date>
-    public let address : String
+    public let id : Int?
+    public let resourceState : ResourceState?
+    public let title : String?
+    public let description : String?
+    public let clubID : Int?
+    public let organizingAthlete : Athlete?
+    public let activityType : ActivityType?
+    public let createdAt : Date?
+    public let routeID : Int?
+    public let isWomanOnly : Bool?
+    public let isPrivate : Bool?
+    public let skillLevel : SkillLevel?
+    public let terrain : Terrain?
+    public let upcomingOccurrences : EquatableArray<Date>?
+    public let address : String?
 }
 
 extension Event : Equatable {}

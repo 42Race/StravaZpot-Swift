@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class ActivityTypeParser : Parser {
-    public func from(json: JSON) -> ActivityType {
-        return ActivityType(rawValue: json.string!)!
+    public func from(json: JSON) -> ActivityType? {
+        return ActivityType(rawValue: json.string ?? "")
     }
 }

@@ -10,10 +10,10 @@ import Foundation
 import SwiftyJSON
 
 public class DateParser : Parser {
-    public func from(json: JSON) -> Date {
-        let dateString = json.string!
+    public func from(json: JSON) -> Date? {
+        let dateString = json.string ?? ""
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
-        return dateFormatter.date(from: dateString)!
+        return dateFormatter.date(from: dateString)
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class FrameTypeParser : Parser {
-    public func from(json: JSON) -> FrameType {
-        return FrameType(rawValue: json.int!)!
+    public func from(json: JSON) -> FrameType? {
+        return FrameType(rawValue: json.int ?? 0)
     }
 }

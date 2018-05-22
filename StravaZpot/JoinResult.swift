@@ -9,9 +9,9 @@
 import Foundation
 
 public struct JoinResult {
-    public let success : Bool
-    public let active : Bool
-    public let membership : Membership
+    public let success : Bool?
+    public let active : Bool?
+    public let membership : Membership?
 }
 
 extension JoinResult : Equatable {}

@@ -11,8 +11,8 @@ import SwiftyJSON
 
 public class JoinResultParser : Parser {
     public func from(json: JSON) -> JoinResult {
-        return JoinResult(success: json["success"].bool!,
-                          active: json["active"].bool!,
-                          membership: json["membership"].membership!)
+        return JoinResult(success: json["success"].bool,
+                          active: json["active"].bool,
+                          membership: json["membership"].membership)
     }
 }

@@ -9,8 +9,8 @@
 import Foundation
 
 public struct Leaderboard {
-    public let entryCount : Int
-    public let entries : EquatableArray<LeaderboardEntry>
+    public let entryCount : Int?
+    public let entries : EquatableArray<LeaderboardEntry>?
 }
 
 extension Leaderboard : Equatable {}

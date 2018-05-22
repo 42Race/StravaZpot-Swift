@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class AchievementTypeParser : Parser {
-    public func from(json: JSON) -> AchievementType {
-        return AchievementType(rawValue: json.int!)!
+    public func from(json: JSON) -> AchievementType? {
+        return AchievementType(rawValue: json.int ?? 0)
     }
 }

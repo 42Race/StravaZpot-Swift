@@ -11,11 +11,11 @@ import SwiftyJSON
 
 public class GearParser : Parser {
     public func from(json: JSON) -> Gear {
-        return Gear(id: json["id"].string!,
-                    resourceState: json["resource_state"].resourceState!,
-                    primary: json["primary"].bool!,
-                    name: json["name"].string!,
-                    distance: json["distance"].distance!,
+        return Gear(id: json["id"].string,
+                    resourceState: json["resource_state"].resourceState,
+                    primary: json["primary"].bool,
+                    name: json["name"].string,
+                    distance: json["distance"].distance,
                     brandName: json["brand_name"].string,
                     modelName: json["model_name"].string,
                     frameType: json["frame_type"].frameType,
